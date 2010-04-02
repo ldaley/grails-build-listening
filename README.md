@@ -30,6 +30,6 @@ To try it out, run…
 
 Grails 1.2 adds a “test event publishing” contract to ensure that all test types publish suitable events to inform interested parties on what is happening. The most obvious usage of this would be for an IDE to provide rich visual feedback of test execution.
 
-Test types call an instance of [GrailsTestEventPublisher](http://github.com/grails/grails/blob/master/grails/src/java/org/codehaus/groovy/grails/test/event/GrailsTestEventPublisher.groovy) to publish events during test execution into the Grails build system.
+Test types call an instance of [GrailsTestEventPublisher](http://github.com/grails/grails-core/blob/master/src/java/org/codehaus/groovy/grails/test/event/GrailsTestEventPublisher.groovy) to publish events during test execution into the Grails build system.
 
 An IDE could inject a listener via the `grails.build.listeners` system property, that communicates back with the IDE somehow. It could respond appropriately to the test event published by `GrailsTestEventPublisher`.
