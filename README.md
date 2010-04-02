@@ -18,11 +18,25 @@ The property value is a comma separated list of class names (that implement `Gra
 
 Listeners can be set in `grails-app/conf/BuildConfig.groovy`. Check out that file in this project.
 
+To try it out, run…
+
+	grails compile
+
+To make sure that `LoggingGrailsBuildListener` is available, then uncomment out…
+
+	//grails.build.listeners='LoggingGrailsBuildListener'
+
+in `BuildConfig.groovy`, then run any grails command.
+
 ### Programmatic
 
 Listeners can be registered during the build. See `scripts/TestAppWithListener.groovy` in this project for an example of how to do so.
 
 To try it out, run…
+
+	grails compile
+
+To make sure that `LoggingGrailsBuildListener` is available, then run…
 
 	grails test-app-with-listener
 
