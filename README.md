@@ -10,7 +10,7 @@ A very trivial implementation is included in this project as `LoggingGrailsBuild
 
 To try it out, run…
 
-	grails -Dgrails.build.listeners=LoggingGrailsBuildListener test-app
+	./grailsw -Dgrails.build.listeners=LoggingGrailsBuildListener test-app
 
 The property value is a comma separated list of class names (that implement `GrailsBuildListener`).
 
@@ -20,7 +20,7 @@ Listeners can be set in `grails-app/conf/BuildConfig.groovy`. Check out that fil
 
 To try it out, run…
 
-	grails compile
+	./grailsw compile
 
 To make sure that `LoggingGrailsBuildListener` is available, then uncomment out…
 
@@ -34,11 +34,11 @@ Listeners can be registered during the build. See `scripts/TestAppWithListener.g
 
 To try it out, run…
 
-	grails compile
+	./grailsw compile
 
 To make sure that `LoggingGrailsBuildListener` is available, then run…
 
-	grails test-app-with-listener
+	./grailsw test-app-with-listener
 
 ## Test Events
 
